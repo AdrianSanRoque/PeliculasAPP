@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="es.usj.section_1.adrian.peliculasapp.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="es.usj.section_1.adrian.peliculasapp.MainScreenFragment"
+        android:label="MainScreenFragment" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_addMovieFragment"
+            app:destination="@id/addMovieFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_editMovieFragment"
+            app:destination="@id/editMovieFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_viewMovieFragment"
+            app:destination="@id/viewMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMovieFragment"
+        android:name="es.usj.section_1.adrian.peliculasapp.AddMovieFragment"
+        android:label="AddMovieFragment" >
+        <action
+            android:id="@+id/action_addMovieFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="es.usj.section_1.adrian.peliculasapp.ContactFragment"
+        android:label="ContactFragment" />
+    <fragment
+        android:id="@+id/editMovieFragment"
+        android:name="es.usj.section_1.adrian.peliculasapp.EditMovieFragment"
+        android:label="EditMovieFragment" />
+    <fragment
+        android:id="@+id/viewMovieFragment"
+        android:name="es.usj.section_1.adrian.peliculasapp.ViewMovieFragment"
+        android:label="ViewMovieFragment" >
+        <action
+            android:id="@+id/action_viewMovieFragment_to_editMovieFragment"
+            app:destination="@id/editMovieFragment" />
+    </fragment>
+</navigation>
